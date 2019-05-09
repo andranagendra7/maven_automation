@@ -1,13 +1,11 @@
 #!/bin/bash
 git --version
-git init
+#git init
 git config --global user.name "andranagendra7"
 
 git config --global user.name "andranagendra720@gmail.com"
 
 cp target/*.war .
-
-git add *.war
 
 rm -rf target/
 rm -rf src/
@@ -23,12 +21,12 @@ git add context.xml
 
 git add tomcat-users.xml
 
-git add .
+git add -A
 
-git remote add origin_ssh git@github.com:andranagendra7/test_docker_demo.git  
 
-git commit -m "add uploding the warfie to docker repository"
 
-git push origin_ssh master
+git commit -m "add the warfie to docker repository"
+
+
 
 
